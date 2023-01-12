@@ -10,7 +10,6 @@ img {
 }
 .row {
   margin-bottom: 5px;
-  height: 500px;
 }
 
 .second-row {
@@ -45,4 +44,25 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  .second-row,
+  .third-row {
+    flex-direction: column;
+  }
+  .third-row-second-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .second-row > div {
+    flex: 1 100px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .row {
+    height: 500px;
+  }
 }

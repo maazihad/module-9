@@ -28,6 +28,7 @@
 }
 .footer {
   grid-area: f;
+  font-size: l;
 }
 
 .grid-container {
@@ -40,4 +41,9 @@
     "n m m a"
     "n m m ad"
     "f f f f";
+}
+
+@media only screen and (max-width: 992px) {
+}
+@media (max-width: 992px) and only {
 }
